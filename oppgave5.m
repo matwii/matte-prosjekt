@@ -1,9 +1,4 @@
 function oppgave5
-disp(['tabell for feil p� x = L for hver n'])
-disp(['-----------------------------------------'])
-disp(['       n            ', 'tilnm�rmet             ', 'feil'])
-disp(['-----------------------------------------'])
-
 format long;
 num_y = ones(11,1);
 error = ones(11,1);
@@ -24,13 +19,7 @@ exact_y = ones(11,1);
     a=(f/(24*E*I))*(x^2)*((x^2)-(4*L*x)+(6*(L^2)));    
 for k = 1:11
     n=10*(2^k);
-
     y=lagY(n);
-    
-    
-    
-    
-
     num_y(k,1) = y(n);
     error(k,1) = abs(y(n)-a);
     intervals(k,1) = n;
