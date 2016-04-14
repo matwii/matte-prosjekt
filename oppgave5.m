@@ -7,7 +7,8 @@ disp(['-----------------------------------------'])
 format long;
 num_y = ones(11,1);
 error = ones(11,1);
- 
+intervals = ones(11,1);
+exact_y = ones(11,1);
 
 
     E=1.3*10^10; %Youngs modulus
@@ -30,8 +31,9 @@ for k = 1:11
     
     num_y(k,1) = y(n);
     error(k,1) = abs(y(n)-a);
-    
+    intervals(k,1) = n;
+    exact_y(k,1) = a;
 end
- T = table(num_y,error)
+ T = table(intervals,num_y,exact_y,error)
 end
 
