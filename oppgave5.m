@@ -24,15 +24,18 @@ exact_y = ones(11,1);
     a=(f/(24*E*I))*(x^2)*((x^2)-(4*L*x)+(6*(L^2)));    
 for k = 1:11
     n=10*(2^k);
+
     y=lagY(n);
     
     
     
     
+
     num_y(k,1) = y(n);
     error(k,1) = abs(y(n)-a);
     intervals(k,1) = n;
     exact_y(k,1) = a;
+
 end
  T = table(intervals,num_y,exact_y,error)
 end
