@@ -1,8 +1,4 @@
-function oppgave6b
-disp(['tabell for feil p� x = L for hver n'])
-disp(['-----------------------------------------'])
-disp(['       n            ', 'tilnm�rmet             ', 'feil'])
-disp(['-----------------------------------------'])
+function Oppgave6c
 
 format long;
 num_y = ones(11,1);
@@ -39,4 +35,3 @@ exact_y = ones(11,1);
     plot(log(intervals),log(error))
 %  axis([0 11 0.12 0.2])
 end
-

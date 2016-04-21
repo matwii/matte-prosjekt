@@ -5,6 +5,7 @@ num_y = ones(11,1);
 error = ones(11,1);
 intervals = ones(11,1);
 exact_y = ones(11,1);
+kondisjonstall = ones(11,1);
 
 E=1.3*10^10; %Youngs modulus
 L=2; %Lengde

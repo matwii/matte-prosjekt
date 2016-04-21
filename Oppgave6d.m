@@ -1,8 +1,4 @@
 function Oppgave6d
-disp(['tabell for feil p� x = L for hver n'])
-disp(['-----------------------------------------'])
-disp(['       n            ', 'tilnm�rmet             ', 'feil'])
-disp(['-----------------------------------------'])
 
 format long;
 num_y = ones(11,1);

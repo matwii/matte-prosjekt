@@ -11,7 +11,11 @@ function B = lagB3(n)
     q=((h^4)/(E*I));
     B=ones(n,1)*f;
     for i = 1:n
-       if i;
+       if i*h >= L-0.3
+        B(i,1) = B(i,1) + g*50/0.3;
+           
+       end
+       
         
         
         
